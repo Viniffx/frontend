@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    max-width: 50rem; /* 800px */
+    margin: 0 auto;
+    padding: 1.25rem; /* 20px */
+    /* configurações dp flex */
+    display: flex;
+    flex-direction: column; /* alinha os filhos (header, form, tabela)*/
+    gap: 1.875rem; /* 30px */
+
+}
+
+/* media query para telas menores que 600px */
+@media (max-width: 37.5rem) {
+    .container{
+        padding: 1rem; 
+        gap: 1.25rem; /*reduz espaco entre seções no celular*/
+    }
+}

@@ -1,0 +1,23 @@
+.botao{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-contraste);
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease; /* animação suave para mudança de cor */
+}
+
+.botao:hover {
+    filter: brightness(0.8); 
+    transform: scale(1.02); /* levanta o botão levemente */
+}
+/* comportamento caso o botão esteja desabilitado */
+.botao:disabled {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-secundario);
+    cursor: not-allowed;
+    filter: none; /* clareia o botão para indicar que está desabilitado */
+}
