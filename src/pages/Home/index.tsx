@@ -1,5 +1,7 @@
 import { BotaoPadrao } from '../../components/BotaoPadrao';
 import {Container} from '../../components/Container'
+import { InputPadrao } from '../../components/InputPadrao';
+
 export function Home() {
     return (
         <>
@@ -10,7 +12,7 @@ export function Home() {
             <BotaoPadrao>
                 Clique aqui
             </BotaoPadrao>
-       
+            <InputPadrao />
 
         </>
     );

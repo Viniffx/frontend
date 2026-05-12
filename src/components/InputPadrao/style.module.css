@@ -1,0 +1,25 @@
+.input{
+    width: 90%;
+    padding: 0.625rem;
+    border: 1px solid(--cor-divisor);
+    font-family: var(--fonte-padrao) ;
+    color: var(--cor-texto-princiapal);
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+
+}
+
+/* efeito ap clicar quando o input estiver focado */
+.input:focus{
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 2px var(--cor-primaria-clara);
+}
+
+/*estilo para cquando o input estiver desabilitado */
+.input:disabled{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-secundario);
+    cursor: not-allowed;
+
+}   
