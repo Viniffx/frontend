@@ -1,10 +1,14 @@
 .botao{
+    left: 90%;
+    position: relative;
     background-color: var(--cor-primaria);
     color: var(--cor-texto-contraste);
     padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;
     border-radius: 0.25rem; /* 4px */
+    justify-self: flex-end;
     font-family: var(--fonte-padrao);
+    display: flex;
     font-weight: bold;
     cursor: pointer;
     transition: filter 0.3s ease, transform 0.3s ease; /* animação suave para mudança de cor */
