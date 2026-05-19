@@ -1,6 +1,6 @@
-import { BotaoPadrao } from "../../components/BotaoPadrao";
+
 import { Container } from "../../components/Container";
-import { InputPadrao } from "../../components/InputPadrao";
+
 import {  MainForm } from "../../components/MainForm";
 
 export function Home() {
@@ -8,11 +8,12 @@ export function Home() {
     <>
       <Container>
 
-      <MainForm>
-
-      Olá da Home
-
-      </MainForm>
+      <MainForm
+        aoAdicionar = {adicionarCurso}
+        aoAtualizar= {atualizarCurso}
+        cursoEmEdicao= {cursoEmEdicao}
+        />
+        
       </Container>
     </>
   );
